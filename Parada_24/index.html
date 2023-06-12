@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <style>
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background:rgb(202, 58, 58);
+        }
+
+        #container{
+            margin: 0 auto;
+            width: auto;
+            display: table;
+            text-align: center;
+        }
+
+        #convert{
+            margin: 8px;
+            margin-top: 2%;
+            background-color: rgb(119, 202, 225);
+        }
+
+        #clear{
+            margin-top: 2%;
+            background-color: rgb(119, 202, 225);
+        }
+
+        #convert:houve{
+            background-color: rgb(166, 170, 168);
+        }
+
+        h1{
+            font-family: sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        input{
+            display: block;
+            padding: 2px;
+            margin-top: 2px;
+            font-size: 2em;
+            color: rgb(235, 161, 126);
+        }
+
+        button{
+            padding: 10px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Conversor de temperatura</h1>
+        <input type="text" id="celsius" placeholder="Celsius" name="c" value=""> <br>
+        <h1>Para</h1>
+        <input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="">
+        <input type="text" id="kelvin" placeholder="Kelvin" name="k" value="">
+
+        <button id="convert">Converter!</button>
+        <button id="clear">Reset!</button>
+    </div>
+    <script src="conversor_temp.js"></script>
+</body>
+</html>
